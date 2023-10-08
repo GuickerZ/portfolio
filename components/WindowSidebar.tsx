@@ -22,7 +22,7 @@ const WindowSidebar: React.FC = () => {
 		<div className="col-span-1 flex flex-col justify-between bg-slate-800">
 			<div className="flex flex-col items-center">
 				<Link
-					href="/"
+					href="/portfolio"
 					className={`group flex items-center justify-center w-full px-2 py-3 border-x-2 border-transparent ${
 						router.route == "/" ? "border-l-slate-500" : ""
 					} hover:bg-slate-700 transition-colors cursor-pointer`}
