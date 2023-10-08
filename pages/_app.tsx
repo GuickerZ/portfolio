@@ -1,6 +1,6 @@
 import React from "react";
 import { AppProps } from "next/app";
-import { WindowProvider } from "@/contexts/windowContext";
+import { WindowProvider } from "@/contexts/WindowContext";
 import "@/styles/globals.css";
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
