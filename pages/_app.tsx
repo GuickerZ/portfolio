@@ -1,9 +1,10 @@
 import React from "react";
-import { AppProps } from "next/app";
-import { WindowProvider } from "@/contexts/WindowContext";
-import "@/styles/globals.css";
+import type { AppProps } from "next/app";
 
-const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
+import "@/styles/globals.css";
+import { WindowProvider } from "@/contexts/WindowContext";
+
+const App: React.FC<AppProps> = ({ Component, pageProps }) => {
 	return (
 		<WindowProvider>
 			<Component {...pageProps} />
@@ -11,4 +12,4 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
 	);
 };
 
-export default MyApp;
+export default App;
