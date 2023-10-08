@@ -1,15 +1,14 @@
 import React from "react";
-import type { AppProps } from "next/app";
-
+import { AppProps } from "next/app";
+import { WindowProvider } from "@/context/windowContext";
 import "@/styles/globals.css";
-import { WindowProvider } from "@/contexts/WindowContext";
 
-const App: React.FC<AppProps> = ({ Component, pageProps }) => {
-	return (
-		<WindowProvider>
-			<Component {...pageProps} />
-		</WindowProvider>
-	);
+const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
+  return (
+    <WindowProvider>
+      <Component {...pageProps} />
+    </WindowProvider>
+  );
 };
 
-export default App;
+export default MyApp;
