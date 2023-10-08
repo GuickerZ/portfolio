@@ -1,0 +1,17 @@
+/* styles.module.css */
+.avatarContainer {
+  position: relative;
+  cursor: pointer;
+}
+
+.avatarBack {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0; /* Comece com a imagem oculta */
+  transition: opacity 0.3s ease-in-out; /* Adicione uma transição suave */
+}
+
+.avatarContainer:hover .avatarBack {
+  opacity: 1; /* Quando o hover ocorre, mostre a imagem de fundo */
+}
