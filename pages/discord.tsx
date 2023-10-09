@@ -4,40 +4,13 @@ import Image from "next/image";
 import WindowLayout from "@/components/WindowLayout";
 import styles from "@/styles/styles.module.css";
 
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 
 
 const Home: NextPage = () => {
-	const [hoveredLogo, setHoveredLogo] = useState(""); // Estado para controlar qual logo está sendo hover
-	const [muted, setMuted] = useState(true); // Estado para controlar o mudo
-	const videoRef = useRef<HTMLVideoElement | null>(null);
-
-	const handleSpaceBar = (event: React.KeyboardEvent<HTMLDivElement>) => {
-		if (event.key === " ") {
-			event.preventDefault(); // Evitar o scroll da página ao pressionar a barra de espaço
-			if (videoRef.current) {
-				if (videoRef.current.paused) {
-					videoRef.current.play();
-				} else {
-					videoRef.current.pause();
-				}
-			}
-		}
-	};
-
-	const toggleMute = () => {
-		if (videoRef.current) {
-			videoRef.current.muted = !videoRef.current.muted;
-			setMuted(videoRef.current.muted);
-		}
-	};
+	const [hoveredLogo, setHoveredLogo] = useState("")
 	return (
-
-		<div
-			className="w-screen h-screen flex items-center justify-center p-5 bg-black/20"
-			onKeyDown={handleSpaceBar}
-			tabIndex={0}
-		>
+		<div className="w-screen h-screen flex items-center justify-center p-5 bg-zinc-900">
 			<WindowLayout>
 				<div className="flex flex-col gap-2 items-center justify-center w-full h-full">
 					<div className={styles.avatarContainer}>
@@ -126,25 +99,9 @@ const Home: NextPage = () => {
 				</div>
 
 			</WindowLayout>
-			<video
-				ref={videoRef}
-				autoPlay
-				loop
-				muted={muted}
-				className="fixed inset-0 w-full h-full object-cover z-[-1]"
-			>
-				<source src="https://cdn.discordapp.com/attachments/1099519182648918026/1160791461537796106/FUNK_CIRCULATION.mp4" type="video/mp4" />
-				Seu navegador não suporta o elemento de vídeo.
-			</video>
-
-			{/* Botão de mute */}
-			<button
-				onClick={toggleMute}
-				className="fixed top-4 right-4 bg-gray-900/80 p-2 rounded-full shadow-md"
-			>
-				{muted ? "🔈" : "🔊"}
-			</button>
 		</div>
+
+
 	);
 };
 
