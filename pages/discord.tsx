@@ -95,7 +95,6 @@ const Home: NextPage = () => {
 
 					</div>
 					<i className="text-center select-none">
-4
 					</i>
 				</div>
 
