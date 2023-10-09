@@ -8,8 +8,9 @@ import React, { useState } from "react";
 
 
 const Home: NextPage = () => {
-	const [hoveredLogo, setHoveredLogo] = useState("")
+	const [hoveredLogo, setHoveredLogo] = useState("");
 	return (
+		
 		<div className="w-screen h-screen flex items-center justify-center p-5 bg-zinc-900">
 			<WindowLayout>
 				<div className="flex flex-col gap-2 items-center justify-center w-full h-full">
@@ -94,7 +95,7 @@ const Home: NextPage = () => {
 
 					</div>
 					<i className="text-center select-none">
-
+4
 					</i>
 				</div>
 
