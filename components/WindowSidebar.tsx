@@ -24,7 +24,7 @@ const WindowSidebar: React.FC = () => {
 				<Link
 					href="/portfolio"
 					className={`group flex items-center justify-center w-full px-2 py-3 border-x-2 border-transparent ${
-						router.route == "/" ? "border-l-slate-500" : ""
+						router.route == "/portfolio" ? "border-l-slate-500" : ""
 					} hover:bg-slate-700 transition-colors cursor-pointer`}
 				>
 					<Home className="text-zinc-400 text-2xl group-hover:text-zinc-100" />
@@ -33,7 +33,7 @@ const WindowSidebar: React.FC = () => {
 					href="/about"
 					className={`group flex items-center justify-center w-full px-2 py-3 border-x-2 border-transparent ${
 						router.route.startsWith("/about") ? "border-l-slate-500" : ""
-					} hover-bg-slate-700 transition-colors cursor-pointer`}
+					} hover:bg-slate-700 transition-colors cursor-pointer`}
 				>
 					<About className="text-zinc-400 text-2xl group-hover:text-zinc-100" />
 				</Link>
