@@ -14,7 +14,7 @@ import {
 	AiOutlineLinkedin as Linkedin,
 } from "react-icons/ai";
 import { FaXTwitter } from "react-icons/fa6";
-
+import { BsDiscord } from "react-icons/bs";
 const WindowSidebar: React.FC = () => {
 	const router = useRouter();
 
@@ -47,10 +47,10 @@ const WindowSidebar: React.FC = () => {
 					<SourceCode className="text-zinc-400 text-2xl group-hover:text-zinc-100" />
 				</Link>
 				<Link
-					href="https://x.com/guicker_"
+					href="https://www.linkedin.com/in/guicker/"
 					className="group flex items-center justify-center w-full px-2 py-3 border-x-2 border-transparent hover:bg-slate-700 transition-colors cursor-pointer"
 				>
-					<FaXTwitter className="text-zinc-400 text-2xl group-hover:text-zinc-100" />
+					<Linkedin className="text-zinc-400 text-2xl group-hover:text-zinc-100" />
 				</Link>
 				<Link
 					href="https://wa.me/5587999084193"
@@ -59,16 +59,27 @@ const WindowSidebar: React.FC = () => {
 					<WhatsApp className="text-zinc-400 text-2xl group-hover:text-zinc-100" />
 				</Link>
 				<Link
+					href="/discord"
+					className={`group flex items-center justify-center w-full px-2 py-3 border-x-2 border-transparent ${
+						router.route.startsWith("/discord") ? "border-l-slate-500" : ""
+					} hover:bg-slate-700 transition-colors cursor-pointer`}
+				>
+					<BsDiscord className="text-zinc-400 text-2xl group-hover:text-zinc-100" />
+				</Link>
+				
+				
+				<Link
 					href="https://www.instagram.com/guilhermematiasss/"
 					className="group flex items-center justify-center w-full px-2 py-3 border-x-2 border-transparent hover:bg-slate-700 transition-colors cursor-pointer"
 				>
 					<Instagram className="text-zinc-400 text-2xl group-hover:text-zinc-100" />
 				</Link>
+				
 				<Link
-					href="https://www.linkedin.com/in/guicker/"
+					href="https://x.com/guicker_"
 					className="group flex items-center justify-center w-full px-2 py-3 border-x-2 border-transparent hover:bg-slate-700 transition-colors cursor-pointer"
 				>
-					<Linkedin className="text-zinc-400 text-2xl group-hover:text-zinc-100" />
+					<FaXTwitter className="text-zinc-400 text-2xl group-hover:text-zinc-100" />
 				</Link>
 			</div>
 			<div className="flex flex-col items-center px-2 py-3 gap-5">
