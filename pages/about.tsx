@@ -17,16 +17,6 @@ const Home: NextPage = () => {
 						className="rounded-xl mb-5"
 					/>
 				</div>
-				<Image
-						src="/9c9ef98e3e100787f2b25c52f8420266.jpg"
-						alt="🤓"
-						width={150}
-						height={150}
-						className="rounded-xl mb-5"
-					/>
-				<div>
-					
-				</div>
 			</WindowLayout>
 		</div>
 	);
