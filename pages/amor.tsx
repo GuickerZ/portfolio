@@ -20,7 +20,7 @@ const Home: NextPage = () => {
 						className="rounded-xl mb-5"
 					/>
 					<Link
-						href="https://www.instagram.com/guilhermematiasss/"
+						href="https://www.instagram.com/geovana_ferro_/"
 						className="group flex items-center justify-center w-full px-2 py-3 border-x-2 border-transparent hover:bg-slate-700 transition-colors cursor-pointer"
 					>
 						<Instagram className="text-zinc-400 text-2xl group-hover:text-zinc-100" />
