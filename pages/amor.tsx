@@ -4,9 +4,7 @@ import Link from "next/link";
 
 import WindowLayout from "@/components/WindowLayout";
 import {
-	AiOutlineWhatsApp as WhatsApp,
-	AiOutlineInstagram as Instagram,
-	AiOutlineLinkedin as Linkedin,
+	AiOutlineInstagram as Instagram
 } from "react-icons/ai";
 const Home: NextPage = () => {
 	return (
@@ -22,10 +20,10 @@ const Home: NextPage = () => {
 						className="rounded-xl mb-5"
 					/>
 					<Link
-					href="https://www.instagram.com/guilhermematiasss/"
-					className="group flex items-center justify-center w-full px-2 py-3 border-x-2 border-transparent hover:bg-slate-700 transition-colors cursor-pointer"
-				>
-					<Instagram className="text-zinc-400 text-2xl group-hover:text-zinc-100" />
+						href="https://www.instagram.com/guilhermematiasss/"
+						className="group flex items-center justify-center w-full px-2 py-3 border-x-2 border-transparent hover:bg-slate-700 transition-colors cursor-pointer"
+					>
+						<Instagram className="text-zinc-400 text-2xl group-hover:text-zinc-100" />
 					@geovana_ferro_
 					</Link>
 				</div>
