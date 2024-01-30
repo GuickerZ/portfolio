@@ -7,8 +7,10 @@ import {
 	VscBell,
 	VscGithubAlt
 } from "react-icons/vsc";
+import { FaHeart } from "react-icons/fa";
 
 const WindowFooter: React.FC = () => {
+	
 	return (
 		<div className="col-span-3 flex items-center justify-between bg-violet-800">
 			<div className="flex items-center gap-2 px-2 h-full hover:bg-violet-700 cursor-pointer">
@@ -22,6 +24,10 @@ const WindowFooter: React.FC = () => {
 				</div>
 			</div>
 			<div className="flex items-center h-full">
+				<div className="flex items-center gap-2 px-2 h-full hover:bg-violet-700 cursor-pointer">
+					<FaHeart className="text-sm text-zinc-100" />
+					<Link href="/amor" className="text-xs text-zinc-100 select-none"></Link>
+				</div>
 				<div className="flex items-center gap-2 px-2 h-full hover:bg-violet-700 cursor-pointer">
 					<VscFeedback className="text-sm text-zinc-100" />
 					<VscBell className="text-sm text-zinc-100" />
